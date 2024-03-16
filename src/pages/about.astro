@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css"
 
+import Navigation from "../components/Navigation.astro"
+import Footer from "../components/Footer.astro"
 
 const pageTitle = "Acerca de mi"
 
@@ -22,7 +24,10 @@ const identityColor = "lightgreen"
 const fontWeight ="bold"
 const textTransform ="uppercase"
 
+
 ---
+
+
 
 <html lang="en">
 	<head>
@@ -51,9 +56,12 @@ const textTransform ="uppercase"
 		<!-- <title>Astro</title> -->
 	</head>
 	<body>
-		<a href="/">Inicio</a>
+		<!-- <a href="/">Inicio</a>
 		<a href="/about/">Acerca de mi</a>
-		<a href="/blog/">Blog</a>
+		<a href="/blog/">Blog</a> -->
+
+		<Navigation />
+
 		<h1>{pageTitle}</h1>
 		
         <h2>.. !y mi nuevo sitio Astro! </h2>
@@ -76,6 +84,6 @@ const textTransform ="uppercase"
 		{goal === 3 ? <p>Mi objetivo es terminar en tres dias </p>:<p>Tres dias es muy poquito</p>}
 
 
-
+		<Footer />
 	</body>
 </html>

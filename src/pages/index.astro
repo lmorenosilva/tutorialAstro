@@ -2,6 +2,12 @@
 
 import "../styles/global.css"
 
+import Navigation from "../components/Navigation.astro"
+
+import Footer from "../components/Footer.astro"
+
+
+
 const pageTitle = "Inicio"
 ---
 
@@ -14,11 +20,17 @@ const pageTitle = "Inicio"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
+		<!-- <a href="/">Inicio</a>
 		<a href="/about/">Acerca de mi</a>
-		<a href="/blog/">Blog</a>
-
+		<a href="/blog/">Blog</a> -->
+		<Navigation />
 		<h1>{pageTitle}</h1>
 		<h1>Mi sitio Astro</h1>
+		<p>Se creo un directorio nuevo en src/ llamadado components</p>
+		<p>Se creo el componente Navigation para sustituir los links</p>
+		<p>Se importa el componente en todas las paginas</p>
+
+		
+		<Footer />
 	</body>
 </html>
