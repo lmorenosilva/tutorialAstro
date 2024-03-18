@@ -3,6 +3,7 @@ import "../styles/global.css"
 
 import Navigation from "../components/Navigation.astro"
 import Footer from "../components/Footer.astro"
+import Header from "../components/Header.astro"
 
 const pageTitle = "Acerca de mi"
 
@@ -20,7 +21,7 @@ const finished = false
 const goal = 3
 
 const skillColor = "navy"
-const identityColor = "lightgreen"
+const identityColor = "red"
 const fontWeight ="bold"
 const textTransform ="uppercase"
 
@@ -50,7 +51,7 @@ const textTransform ="uppercase"
 			}
 			.identity{
 				color: var(--identityColor);
-				font-weight: bold;
+				font-weight: var(--fontWeight);
 			}
 		</style>
 		<!-- <title>Astro</title> -->
@@ -60,7 +61,8 @@ const textTransform ="uppercase"
 		<a href="/about/">Acerca de mi</a>
 		<a href="/blog/">Blog</a> -->
 
-		<Navigation />
+		<!-- <Navigation /> -->
+		<Header />
 
 		<h1>{pageTitle}</h1>
 		
@@ -85,5 +87,8 @@ const textTransform ="uppercase"
 
 
 		<Footer />
+		<script>
+			import "../scripts/menu.js"
+		</script>
 	</body>
 </html>

@@ -6,6 +6,8 @@ import Navigation from "../components/Navigation.astro"
 
 import Footer from "../components/Footer.astro"
 
+import Header from "../components/Header.astro"
+
 
 
 const pageTitle = "Inicio"
@@ -23,14 +25,28 @@ const pageTitle = "Inicio"
 		<!-- <a href="/">Inicio</a>
 		<a href="/about/">Acerca de mi</a>
 		<a href="/blog/">Blog</a> -->
-		<Navigation />
+		<Header />
+		<!-- 		<Navigation /> -->
 		<h1>{pageTitle}</h1>
 		<h1>Mi sitio Astro</h1>
 		<p>Se creo un directorio nuevo en src/ llamadado components</p>
 		<p>Se creo el componente Navigation para sustituir los links</p>
-		<p>Se importa el componente en todas las paginas</p>
-
-		
+		<p>Se importa el componente en todas las paginas</p>		
 		<Footer />
+		<!-- <script>
+			document.querySelector(".hamburger").addEventListener("click",() =>{
+				document.querySelector(".nav-links").classList.toggle(".expanded")
+			})
+		</script> -->
+		  
+		  <script>
+			/* document.querySelector('.hamburger').addEventListener('click', () => {
+			  document.querySelector('.nav-links').classList.toggle('expanded');
+			}); */
+
+			import "../scripts/menu.js"
+
+		  </script>
+		</body>
 	</body>
 </html>
