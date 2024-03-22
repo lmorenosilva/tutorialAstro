@@ -1,94 +1,34 @@
 ---
-import "../styles/global.css"
+import BaseLayout from '../layouts/BaseLayout.astro'
 
-import Navigation from "../components/Navigation.astro"
-import Footer from "../components/Footer.astro"
-import Header from "../components/Header.astro"
-
-const pageTitle = "Acerca de mi"
+const pageTitle = 'Acerca de mi'
 
 const identity = {
-	firstName: "Luis Alberto Moreno Silva",
-	country:"Venezuela",
-	occupation:"Technical writer",
-	hobbies:["fotografia","Beber","Basket"]
+  firstName: 'Luis Alberto Moreno Silva',
+  country: 'Venezuela',
+  occupation: 'Technical writer',
+  hobbies: ['fotografia', 'Beber', 'Basket'],
 }
 
-const skill = ["HTML","CSS","JavaScript","Astro","git"]
+const skill = ['HTML', 'CSS', 'JavaScript', 'Astro', 'git']
 
-const happy = true
-const finished = false
-const goal = 3
-
-const skillColor = "navy"
-const identityColor = "red"
-const fontWeight ="bold"
-const textTransform ="uppercase"
-
-
+const skillColor = 'navy'
+const identityColor = 'red'
+const fontWeight = 'bold'
+const textTransform = 'uppercase'
 ---
 
+<BaseLayout pageTitle={pageTitle}>
+  <p>
+    Estoy trabajando en el tutorial introductorio de Astro.Esta es la segunda
+    pagina de mi sitio web y es la primera que he construido yo solo
+  </p>
+  <p>
+    Este sitio se ira actualizando a medida que vaya completando mas partes del
+    tutorial
+  </p>
 
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-		<style define:vars = {{skillColor,identityColor,fontWeight,textTransform}}>
-			h1{
-				color:lightblue;
-				font-size: 4rem;
-			}
-			.skill{
-				color: blue;
-				color: var(--skillColor);
-				font-weight:var(--fontWeight);
-				text-transform: var(--textTransform);
-				
-			}
-			.identity{
-				color: var(--identityColor);
-				font-weight: var(--fontWeight);
-			}
-		</style>
-		<!-- <title>Astro</title> -->
-	</head>
-	<body>
-		<!-- <a href="/">Inicio</a>
-		<a href="/about/">Acerca de mi</a>
-		<a href="/blog/">Blog</a> -->
-
-		<!-- <Navigation /> -->
-		<Header />
-
-		<h1>{pageTitle}</h1>
-		
-        <h2>.. !y mi nuevo sitio Astro! </h2>
-        <p>Estoy trabajando en el tutorial introductorio de Astro.Esta es la segunda pagina de mi sitio web y es la primera que he construido yo solo</p>
-		<p>Este sitio se ira actualizando a medida que vaya completando  mas partes del tutorial</p>
-
-		<p>Aqui algunos datos acerca de mi</p>
-
-		<ul class="identity">
-			<li >Mi nombre es {identity.firstName}</li>
-			<li >Vivo en {identity.country} y trabajo como {identity.occupation} </li>
-			<li >Dos de mis aficiones son la {identity.hobbies[0]} y jugar {identity.hobbies[2]}</li>
-		</ul>
-		<p>Mis habilidades</p>		
-
-		<ul> {skill.map((skill => <li class="skill">{skill}</li>))}</ul>
-		
-		{ happy && <p>Estoy feliz de aprender Astro</p>}
-		{finished && <p>Ya termine mi tutorial de Astro</p>}
-		{goal === 3 ? <p>Mi objetivo es terminar en tres dias </p>:<p>Tres dias es muy poquito</p>}
-
-
-		<Footer />
-		<script>
-			import "../scripts/menu.js"
-		</script>
-	</body>
-</html>
+  <p>Aqui algunos datos acerca de mi</p>
+  <h2>Mi impresionante subtítulo del blog</h2>
+  <p>Hola Maricon</p>
+</BaseLayout>
