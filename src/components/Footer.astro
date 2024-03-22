@@ -5,30 +5,25 @@ const username = "lmorenosilva" */
 
 /* https://twitter.com/home */
 
-
-
-import Social from "./Social.astro";
-
+import Social from './Social.astro'
 ---
 
 <style>
-  footer{
+  footer {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
   }
 </style>
 
- 
-
 <footer>
-    <!-- <p>Más información sobre mis proyectos en <a href={`https://${platform}.com/${username}`}>{platform}</a>!</p> -->
-    <Social platform = "Twitter" username = "lmorenosilva" />
-    <Social platform = "Github" username = "lmorenosilva" />
-    <!-- <Social platform = "twitter" username = "lmorenosilva" /> -->
-  </footer>
-  
-  <!-- <footer> Este no funciona debido al www original de la pagina
+  <!-- <p>Más información sobre mis proyectos en <a href={`https://${platform}.com/${username}`}>{platform}</a>!</p> -->
+  <Social platform='Twitter' username='lmorenosilva' />
+  <p>Más información sobre mis proyectos en</p>
+  <Social platform='Github' username='lmorenosilva' />
+  <!-- <Social platform = "twitter" username = "lmorenosilva" /> -->
+</footer>
+
+<!-- <footer> Este no funciona debido al www original de la pagina
     <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
   </footer> -->
-  
