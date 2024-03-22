@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Mi tercera publicacion en el el blog'
 pubDate: 2024-03-15
 descripcion: 'Esta es la terceera publicacion de mi nuevo blog de astro'
@@ -17,8 +18,8 @@ tags:
   ]
 ---
 
-# Mi Tercera publicación en el blog
+<!-- # Mi Tercera publicación en el blog
 
 Publicado el: 2024-03-16
 
-Tuve algunas dificultades subiendo los archivos a GitHub pero gracias a la comunidad logre resolver
+Tuve algunas dificultades subiendo los archivos a GitHub pero gracias a la comunidad logre resolver -->

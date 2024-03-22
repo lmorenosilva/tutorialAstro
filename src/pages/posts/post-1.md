@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Mi primera publicacion en el el blog'
 pubDate: 2024-03-12
 descripcion: 'Esta es la primera publicacion de mi nuevo blog de astro'
@@ -9,7 +10,7 @@ image:
 tags: ['astro', 'bloguear', 'aprender en publico']
 ---
 
-# Mi primera publicación en el blog
+<!-- # Mi primera publicación en el blog
 
 Publicado el: 2024-03-12
 
@@ -25,6 +26,4 @@ Publicado el: 2024-03-12
 
 ## Próximos pasos
 
-Terminaré el tutorial de Astro, y luego seguiré añadiendo más publicaciones. Mira este espacio para más por venir.
-
-### Cualquier Verga
+Terminaré el tutorial de Astro, y luego seguiré añadiendo más publicaciones. Mira este espacio para más por venir. -->
